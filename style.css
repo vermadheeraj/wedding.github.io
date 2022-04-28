@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
+:root {
+    --pink: #EE0548;
+    --black: #130f40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: .2s linear;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background: var(--pink);
+    color: white;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background: var(--black);
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10000;
+    background: var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+
+}
+
+header .logo {
+    color: white;
+}
+
+header .logo img {
+    background: var(--pink);
+    border: 2px solid var(--pink);
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+
+}
+
+header .navbar a {
+    color: white;
+    font-size: 20px;
+    margin-left: 1.5rem;
+}
+
+header .navbar a:hover {
+    color: var(--black);
+}
+
+/* selction start css */
+section {
+    padding: 4rem 40px;
+}
+
+
+
+.home {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background: url('wedding2.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    font-size: 30px;
+    color: var(--pink);
+    font-style: italic;
+    font-weight: bolder;
+
+}
+
+.home .content h3 {
+    font-size: 35px;
+    color: whitesmoke;
+    width: 400px;
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid var(--pink);
+    color: var(--black);
+    padding: 5px 5px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background: var(--pink);
+    color: white;
+}
+
+.step-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.step-container .step {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--pink);
+    box-shadow: 8px 5px rgba(0, 0, 0, .9);
+    flex: 1 1 10rem;
+    align-items: center;
+
+}
+
+.step-container .step span {
+    font-size: 22px;
+    color: var(--pink);
+    font-weight: bolder;
+}
+
+.step-container .step h3 {
+    font-size: 20px;
+    color: var(--black);
+    padding: 7px;
+    font-family: 'Lobster Two', cursive;
+
+}
+
+.step-container .step p {
+    font-size: 15px;
+    color: #666;
+    padding: 5px;
+    font-family: 'Lobster Two', cursive;
+}
+
+/* vendor selection css */
+
+.heading {
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.heading h3 {
+    font-size: 20x;
+    color: white;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+    font-family: 'Lobster Two', cursive;
+}
+
+.vendor .box-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vendor .box-container .box {
+    flex: 1 1 15rem;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 5px 5px rgba(0, 0, 0, .9);
+    height: 200px;
+
+
+}
+
+.vendor .box-container .box img {
+    width: 300px;
+    height: 200px;
+
+}
+
+.vendor .box-container .box .content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(54, 47, 34, 0.2);
+    padding: 10px;
+    padding-top: 8px;
+}
+
+.vendor .box-container .box .content h3 {
+    padding: 10px 0;
+    color: var(--pink);
+    font-size: 20px;
+    font-style: initial;
+
+}
+
+.vendor .box-container .box .content p {
+    padding: 10px 0;
+    color: white;
+    font-size: 15px;
+    font-style: initial;
+
+}
+
+.vendor .box-container .box:hover .content {
+    top: 0;
+}
+
+/* client section start*/
+
+.client .row {
+    display: flex;
+}
+
+.client .row .divider {
+    padding: 10px;
+}
+
+.client .row .box-container .box img {
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 10px solid white;
+    box-shadow: 10px 20px rgba(0, 0, 0, .9);
+}
+
+.client .row .box-container .box .info {
+    padding: 1rem 0;
+}
+
+.client .row .box-container .box .info h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.client .row .box-container .box .info p {
+    font-size: 17px;
+    color: white;
+    padding: 20px 25px;
+    font-style: initial;
+}
+
+.team .box-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.team .box-container .box {
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 10px 10px rgba(0, 0, 0, .9);
+    background: white;
+    padding: 8px 5px;
+    text-align: center;
+    background-size: cover;
+    flex: 1 1 10rem;
+}
+
+.team .box-container .box img {
+    height: 200px;
+    width: 300px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.team .box-container .box h3 {
+    font-size: 25px;
+    color: var(--black);
+    padding: 8px;
+    font-style: italic;
+}
+
+.team .box-container .box span {
+    font-size: 25px;
+    font-style: italic;
+    color: var(--pink);
+    padding: 8px;
+}
+
+.team .box-container .box p {
+    font-size: 18px;
+    padding: 8px;
+    color: black;
+    font-style: italic;
+}
+
+/*gallery selection*/
+
+
+.gallery .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .box-container .box {
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 8px 8px rgba(0, 0, 0, .9);
+    padding: 8px 8px;
+    text-align: center;
+    width: 350px;
+
+}
+
+.gallery .box-container .box img {
+    height: 250px;
+    width: 330px;
+    border-radius: 10px;
+
+}
+
+.gallery .box-container .box .content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    padding: 10px;
+    padding-top: 8px;
+}
+
+.gallery .box-container .box .content h3 {
+    font-size: 23px;
+    padding: 8px 0;
+    font-style: initial;
+    color: var(--pink);
+
+}
+
+.gallery .box-container .box .content p {
+    font-size: 18px;
+    padding: 8px 0;
+    font-style: initial;
+    color: whitesmoke;
+}
+
+.gallery .box-container .box:hover .content {
+    top: 0;
+}
+
+.contact form {
+    padding: 20px;
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 8px 10px rgba(0, 0, 0, .9);
+    text-align: center;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.contact form .input-box input {
+    padding: 8px;
+    margin: 8px 10px;
+    width: 500px;
+    border-radius: 5px;
+    border: 1px solid var(--pink);
+
+}
+
+/*blog css start*/
+
+.blog .box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blog .box-container .box {
+    background: whitesmoke;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px rgba(0, 0, 0, .9);
+    overflow: hidden;
+    flex: 1 1 5rem;
+
+}
+
+.blog .box-container .box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.blog .box-container .box .info {
+    padding: 10px;
+}
+
+.blog .box-container .box h3 {
+    color: var(--black);
+    font-size: 23px;
+    font-style: italic;
+    padding: 8px;
+
+}
+
+.blog .box-container .box h3 span {
+    color: var(--pink);
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.blog .box-container .box p {
+    color: #333;
+    font-size: 18px;
+    font-style: oblique;
+}
+
+.footer {
+    padding: 15px 10px;
+    font-size: 22px;
+    color: white;
+    background: var(--pink);
+    text-align: center;
+    font-style: inherit;
+}
+
+.footer span {
+    color: rgb(18, 224, 224);
+}
+
+.footer .box {
+
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer .box h3 {
+    font-size: 18px;
+    padding: 8px;
+    font-style: italic;
+    color: white;
+}
+
+.footer .box a {
+    display: block;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+}
+
+.footer .box a:hover {
+    color: #ffa500;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width : 1100px) {
+    body {
+        width: 100%;
+    }
+
+    .home {
+        padding: 40px;
+        width: 950px;
+        margin: 40px;
+    }
+    .step-container{
+        align-items: center;
+        width: 1000px;
+        height: 400px;
+    }
+   .box-container .box img{
+       width: 200px;
+       height: 200px;
+
+   }
+
+}
